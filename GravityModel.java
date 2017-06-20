@@ -1,4 +1,4 @@
 public interface GravityModel
 {
-    public double getGravitionalField ();
+    public double getGravitationalField ();
 }

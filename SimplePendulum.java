@@ -12,9 +12,9 @@ public class SimplePendulum extends AbstractPendulum
      * inMass: the point mass (>0)
      * inTheta0: angular displacement at t=0 (0<=theta0<=pi/6)
      */
-    public SimplePendulum (double inLength, double inMass, double inTheta0)
+    public SimplePendulum (double inLength, double inMass, double inTheta0, GravityConstant inG)
     {
-        super (inLength, inMass, inTheta0);
+        super (inLength, inMass, inTheta0, inG);
         angularFrequency = Math.sqrt (this.getGravitationalField () / this.getStringLength ());
         periodOfMotion = 2 * Math.PI
                          * Math.sqrt (this.getStringLength () / this.getGravitationalField ());

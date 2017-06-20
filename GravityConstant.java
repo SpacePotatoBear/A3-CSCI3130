@@ -11,4 +11,9 @@ public class GravityConstant implements GravityModel
     {
         return this.gravity;
     }
+
+    public void setGravitationalField(double gravity)
+    {
+        this.gravity = gravity;
+    }
 }
